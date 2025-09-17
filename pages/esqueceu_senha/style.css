@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  min-height: 100vh;
+  padding: 40px 20px;
+  
+  /* Centraliza vertical e horizontal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px 50px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  
+  /* Scroll interno caso necessário */
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+/* Personalização do scrollbar para UX */
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #7494ec;
+  border-radius: 4px;
+}
+
+/* Título principal */
+.container h1 {
+  font-size: 34px;
+  color: #333;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #7494ec;
+  padding-bottom: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Caixa de input */
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #f0f0f0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+  outline: 2px solid #7494ec;
+  background: #fafafa;
+}
+
+/* Botão principal */
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: #7494ec;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #5a77d3;
+  box-shadow: 0 5px 15px rgba(116, 148, 236, 0.4);
+}
+
+/* Link “voltar ao login” */
+.forgot-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forgot-link a {
+  color: #7494ec;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.forgot-link a:hover {
+  color: #5577cc;
+  text-decoration: underline;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 450px) {
+  .container {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
