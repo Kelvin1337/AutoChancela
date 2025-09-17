@@ -1,35 +1,88 @@
-# 🚗 Chancela automática com reconhecimento de placas
+# 🚗 Sistema de Login e Cadastro de Veículos
 
-## 📌 Introdução
-A crescente demanda por **segurança** e **agilidade** no controle de acesso a estacionamentos, condomínios e áreas restritas impulsiona o uso de soluções tecnológicas avançadas.  
-Este Trabalho de Conclusão de Curso propõe o desenvolvimento de um **sistema de chancela automática** utilizando **reconhecimento óptico de caracteres (OCR)** para leitura de placas veiculares, integrando técnicas de **Visão Computacional** e **Internet das Coisas (IoT)**.  
-
-O projeto busca oferecer:
-- **Eficiência operacional** na gestão de acessos.
-- **Redução de custos** com processos manuais.
-- **Experiência fluida** para o usuário, minimizando o tempo de espera.
+![GitHub repo size](https://img.shields.io/github/repo-size/SEU_USUARIO/SEU_REPOSITORIO)
+![GitHub language count](https://img.shields.io/github/languages/count/SEU_USUARIO/SEU_REPOSITORIO)
+![GitHub top language](https://img.shields.io/github/languages/top/SEU_USUARIO/SEU_REPOSITORIO)
+![GitHub issues](https://img.shields.io/github/issues/SEU_USUARIO/SEU_REPOSITORIO)
+![GitHub license](https://img.shields.io/github/license/SEU_USUARIO/SEU_REPOSITORIO)
 
 ---
 
-## 🎯 Objetivos
-- Automatizar a abertura de chancelas por meio de leitura e reconhecimento de placas.
-- Integrar hardware e software para controle de acesso seguro e eficiente.
-- Garantir baixo tempo de resposta (menos de 2 segundos para abertura).
-- Utilizar algoritmos de visão computacional em cenários reais.
+## 📌 Introdução
+Este projeto oferece uma solução prática para **gestão de usuários e veículos** em ambientes acadêmicos ou corporativos.  
+O sistema permite que cada aluno/usuário tenha acesso a uma **área exclusiva**, onde pode se registrar, realizar login e cadastrar seus veículos de forma simples e organizada.  
+
+Foco em **usabilidade**, **design moderno responsivo** e **segurança na autenticação**.
+
+---
+
+## 🎯 Funcionalidades
+- **Tela de Login e Registro**
+  - Autenticação de usuários via RA (Registro Acadêmico) e senha.
+  - Registro de novos usuários com nome, RA, e-mail e senha.
+  - Validação de termos de uso obrigatória.
+  - Recuperação de senha com link dedicado.
+
+- **Tela de Gerenciamento de Veículos**
+  - Exibição de lista personalizada de veículos do usuário.
+  - Cadastro de novos veículos com informações:
+    - Tipo (Carro, Moto, Caminhão, Outro).
+    - Modelo.
+    - Cor.
+    - Ano.
+    - Placa (padrão brasileiro).
+  - Edição e exclusão de veículos já cadastrados.
+  - Interface simples, intuitiva e responsiva.
 
 ---
 
 ## 🛠 Tecnologias Utilizadas
-- **Linguagem**: Python  
-- **Visão Computacional**: OpenCV  
-- **OCR**: EasyOCR / Tesseract  
-- **Controle de Hardware**: ESP32 Wi-Fi / Bluetooth  
-- **Banco de Dados**: MySQL / SQLite  
-- **Comunicação**: HTTP ou MQTT  
+- **Frontend**: HTML, CSS e JavaScript  
+- **Backend**: PHP  
+- **Banco de Dados**: MySQL  
+- **Bibliotecas/Recursos**:  
+  - [Boxicons](https://boxicons.com/) → ícones modernos  
+  - [Font Awesome](https://fontawesome.com/) → ícones adicionais  
+  - [SweetAlert2](https://sweetalert2.github.io/) → alertas interativos  
+  - **Responsividade** com CSS3 e Flexbox  
 
 ---
 
+## 📂 Estrutura do Sistema
+- `index.php` → Tela inicial com login e registro de usuários.  
+- `cadastro.php` → Cadastro de novos usuários.  
+- `login.php` → Autenticação de login.  
+- `logout.php` → Finaliza a sessão do usuário.  
+- `pages/veiculos/` → Tela de gerenciamento de veículos (listagem, cadastro e edição).  
+- `pages/termos/` → Página de termos de uso.  
+- `pages/esqueceu_senha/` → Recuperação de senha.  
 
- 
+---
 
+## 📸 Demonstração Visual
+🔑 **Tela de Login e Registro**  
+- Login com RA e senha.  
+- Registro com dados pessoais e aceite de termos.  
 
+🚙 **Tela de Gerenciamento de Veículos**  
+- Lista de veículos cadastrados.  
+- Botão para adicionar novos veículos.  
+- Opções de editar e excluir.  
+
+---
+
+## 🔄 Fluxo do Sistema
+
+```mermaid
+flowchart TD
+    A[🔑 Tela de Login] -->|Usuário novo| B[📝 Tela de Registro]
+    A -->|Usuário existente| C[✔️ Autenticação]
+    B -->|Cadastro concluído| A
+    C -->|Login válido| D[🚙 Gerenciamento de Veículos]
+    C -->|Login inválido| A
+
+    D --> E[📋 Listar Veículos]
+    D --> F[➕ Cadastrar Novo Veículo]
+    D --> G[✏️ Editar Veículo]
+    D --> H[🗑️ Excluir Veículo]
+    D --> I[🚪 Logout]
