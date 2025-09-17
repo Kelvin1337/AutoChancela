@@ -61,16 +61,8 @@ Foco em **usabilidade**, **design moderno responsivo** e **segurança na autenti
 
 ## 🔄 Fluxo do Sistema
 
-```mermaid
-flowchart TD
-    A[🔑 Tela de Login] -->|Usuário novo| B[📝 Tela de Registro]
-    A -->|Usuário existente| C[✔️ Autenticação]
-    B -->|Cadastro concluído| A
-    C -->|Login válido| D[🚙 Gerenciamento de Veículos]
-    C -->|Login inválido| A
+flowchart LR
+    User[Usuário / Aluno] -->|Login / Registro| System[Sistema de Gestão de Veículos]
+    System -->|Exibe tela de veículos| VehicleDB[Banco de Dados de Veículos]
+    System -->|Autentica usuários| UserDB[Banco de Dados de Usuários]
 
-    D --> E[📋 Listar Veículos]
-    D --> F[➕ Cadastrar Novo Veículo]
-    D --> G[✏️ Editar Veículo]
-    D --> H[🗑️ Excluir Veículo]
-    D --> I[🚪 Logout]
