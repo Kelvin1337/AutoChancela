@@ -59,18 +59,6 @@ Foco em **usabilidade**, **design moderno responsivo** e **segurança na autenti
 
 ---
 
-## 📸 Demonstração Visual
-🔑 **Tela de Login e Registro**  
-- Login com RA e senha.  
-- Registro com dados pessoais e aceite de termos.  
-
-🚙 **Tela de Gerenciamento de Veículos**  
-- Lista de veículos cadastrados.  
-- Botão para adicionar novos veículos.  
-- Opções de editar e excluir.  
-
----
-
 ## 🔄 Fluxo do Sistema
 
 ```mermaid
