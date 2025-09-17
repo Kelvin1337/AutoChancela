@@ -59,10 +59,11 @@ Foco em **usabilidade**, **design moderno responsivo** e **segurança na autenti
 
 ---
 
-## 🔄 Fluxo do Sistema
+## 🔄 Fluxo do Sistema (Modelo C4)
 
+### 🌐 Contexto (Nível 1)
+```mermaid
 flowchart LR
     User[Usuário / Aluno] -->|Login / Registro| System[Sistema de Gestão de Veículos]
     System -->|Exibe tela de veículos| VehicleDB[Banco de Dados de Veículos]
     System -->|Autentica usuários| UserDB[Banco de Dados de Usuários]
-
