@@ -1,69 +1,43 @@
-# 🚗 Sistema de Login e Cadastro de Veículos
+# Sistema de Login e Cadastro de Veículos
 
-![GitHub repo size](https://img.shields.io/github/repo-size/SEU_USUARIO/SEU_REPOSITORIO)
-![GitHub language count](https://img.shields.io/github/languages/count/SEU_USUARIO/SEU_REPOSITORIO)
-![GitHub top language](https://img.shields.io/github/languages/top/SEU_USUARIO/SEU_REPOSITORIO)
-![GitHub issues](https://img.shields.io/github/issues/SEU_USUARIO/SEU_REPOSITORIO)
-![GitHub license](https://img.shields.io/github/license/SEU_USUARIO/SEU_REPOSITORIO)
+![GitHub repo size](https://img.shields.io/github/repo-size/Kelvin1337/instituto-ks?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Kelvin1337/AutoChancela?style=for-the-badge)
 
 ---
 
-## 📌 Introdução
-Este projeto oferece uma solução prática para **gestão de usuários e veículos** em ambientes acadêmicos ou corporativos.  
-O sistema permite que cada aluno/usuário tenha acesso a uma **área exclusiva**, onde pode se registrar, realizar login e cadastrar seus veículos de forma simples e organizada.  
-
-Foco em **usabilidade**, **design moderno responsivo** e **segurança na autenticação**.
+> Este projeto oferece uma solução prática para gestão de usuários e veículos em ambientes acadêmicos ou corporativos.  
+O sistema permite que cada aluno/usuário tenha acesso a uma **área exclusiva**, onde pode se registrar, realizar login e cadastrar seus veículos de forma simples e organizada.  Foco em usabilidade, design moderno responsivo e segurança na autenticação.
 
 ---
 
-## 🎯 Funcionalidades
-- **Tela de Login e Registro**
-  - Autenticação de usuários via RA (Registro Acadêmico) e senha.
-  - Registro de novos usuários com nome, RA, e-mail e senha.
-  - Validação de termos de uso obrigatória.
-  - Recuperação de senha com link dedicado.
+## 🔄 Ajustes e melhorias
 
-- **Tela de Gerenciamento de Veículos**
-  - Exibição de lista personalizada de veículos do usuário.
-  - Cadastro de novos veículos com informações:
-    - Tipo (Carro, Moto, Caminhão, Outro).
-    - Modelo.
-    - Cor.
-    - Ano.
-    - Placa (padrão brasileiro).
-  - Edição e exclusão de veículos já cadastrados.
-  - Interface simples, intuitiva e responsiva.
+O projeto está finalizado e contém os seguintes recursos:
+
+- [x] Estrutura das telas de login e registro com HTML semântico;
+- [x] Estilização principal com CSS3 e variáveis;
+- [x] Responsividade para desktop, tablet e mobile;
+- [X] Integração do botão “Concordo” com os Termos de Uso;
+- [X] Implementação completa do backend em PHP;
+- [X] Conexão com banco de dados MySQL;
+- [X] Validação de dados no frontend e backend;
+- [X] Criptografia de senhas e autenticação segura;
+- [X] Adição de painel administrativo para gestão de usuários e veículos;
+- [X] Otimização de performance e melhorias de UX/UI.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
-- **Frontend**: HTML, CSS e JavaScript  
-- **Backend**: PHP  
-- **Banco de Dados**: MySQL  
-- **Bibliotecas/Recursos**:  
-  - [Boxicons](https://boxicons.com/) → ícones modernos  
-  - [Font Awesome](https://fontawesome.com/) → ícones adicionais  
-  - [SweetAlert2](https://sweetalert2.github.io/) → alertas interativos  
-  - **Responsividade** com CSS3 e Flexbox  
+## 💻 Pré-requisitos
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+- Você instalou a versão mais recente do navegador Google Chrome, Firefox ou Edge.
+- Você possui um ambiente local configurado com XAMPP, WAMP ou outro servidor compatível com PHP e MySQL.
+- Você tem conhecimentos básicos sobre HTML, CSS, JavaScript, PHP e Banco de Dados MySQL.
 
 ---
 
-## 📂 Estrutura do Sistema
-- `index.php` → Tela inicial com login e registro de usuários.  
-- `cadastro.php` → Cadastro de novos usuários.  
-- `login.php` → Autenticação de login.  
-- `logout.php` → Finaliza a sessão do usuário.  
-- `pages/veiculos/` → Tela de gerenciamento de veículos (listagem, cadastro e edição).  
-- `pages/termos/` → Página de termos de uso.  
-- `pages/esqueceu_senha/` → Recuperação de senha.  
+## 😄 Seja um dos contribuidores
 
----
-
-## 🔄 Fluxo do Sistema (Modelo C4)
-
-### 🌐 Contexto (Nível 1)
-```mermaid
-flowchart LR
-    User[Usuário / Aluno] -->|Login / Registro| System[Sistema de Gestão de Veículos]
-    System -->|Exibe tela de veículos| VehicleDB[Banco de Dados de Veículos]
-    System -->|Autentica usuários| UserDB[Banco de Dados de Usuários]
+Quer fazer parte desse projeto?
+Clique aqui
