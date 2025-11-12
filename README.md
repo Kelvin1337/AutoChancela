@@ -1,69 +1,31 @@
-# 🚗 Sistema de Login e Cadastro de Veículos
+# Projeto X-Men: Seleção de Personagens
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Kelvin1337/AutoChancela)
-![GitHub language count](https://img.shields.io/github/languages/count/Kelvin1337/AutoChancela)
-![GitHub top language](https://img.shields.io/github/languages/top/Kelvin1337/AutoChancela)
-![GitHub issues](https://img.shields.io/github/issues/Kelvin1337/AutoChancela)
-![GitHub license](https://img.shields.io/github/license/Kelvin1337/AutoChancela)
+![GitHub repo size](https://img.shields.io/github/repo-size/Kelvin1337/X-MEN?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Kelvin1337/X-MEN?style=for-the-badge)
 
----
+<img src="src/imagens/screenshot.png" alt="Screenshot do Projeto">
 
-## 📌 Introdução
-Este projeto oferece uma solução prática para **gestão de usuários e veículos** em ambientes acadêmicos ou corporativos.  
-O sistema permite que cada aluno/usuário tenha acesso a uma **área exclusiva**, onde pode se registrar, realizar login e cadastrar seus veículos de forma simples e organizada.  
+> Sistema automatizado de controle de entrada e saída de veículos baseado em Visão Computacional e Reconhecimento Óptico de Caracteres (OCR).
+O projeto tem como objetivo otimizar o fluxo de veículos em estacionamentos e ambientes institucionais, garantindo rapidez, segurança e eficiência operacional.
 
-Foco em **usabilidade**, **design moderno responsivo** e **segurança na autenticação**.
+### Funcionalidades e Melhorias
 
----
+O projeto foi finalizado com as seguintes funcionalidades:
 
-## 🎯 Funcionalidades
-- **Tela de Login e Registro**
-  - Autenticação de usuários via RA (Registro Acadêmico) e senha.
-  - Registro de novos usuários com nome, RA, e-mail e senha.
-  - Validação de termos de uso obrigatória.
-  - Recuperação de senha com link dedicado.
+- [x] Captura de imagem em tempo real via webcam (OpenCV);
+- [x] Leitura automática da placa do veículo com Tesseract OCR;
+- [x] Integração com banco de dados institucional em PHP/MySQL;
+- [x] Controle de acesso (entrada e saída) automático;
+- [X] Interface de login e registro de alunos com validação e termos de uso;
+- [X] Sistema de gerenciamento de veículos por usuário;
+- [X] Design moderno, responsivo e intuitivo em HTML, CSS e JavaScript.
 
-- **Tela de Gerenciamento de Veículos**
-  - Exibição de lista personalizada de veículos do usuário.
-  - Cadastro de novos veículos com informações:
-    - Tipo (Carro, Moto, Caminhão, Outro).
-    - Modelo.
-    - Cor.
-    - Ano.
-    - Placa (padrão brasileiro).
-  - Edição e exclusão de veículos já cadastrados.
-  - Interface simples, intuitiva e responsiva.
+## 💻 Pré-requisitos
 
----
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+- Python 3.10+ instalado;
+- PHP 8+ e servidor local (como XAMPP ou WAMP);
+- Banco de dados MySQL configurado.
 
-## 🛠 Tecnologias Utilizadas
-- **Frontend**: HTML, CSS e JavaScript  
-- **Backend**: PHP  
-- **Banco de Dados**: MySQL  
-- **Bibliotecas/Recursos**:  
-  - [Boxicons](https://boxicons.com/) → ícones modernos  
-  - [Font Awesome](https://fontawesome.com/) → ícones adicionais  
-  - [SweetAlert2](https://sweetalert2.github.io/) → alertas interativos  
-  - **Responsividade** com CSS3 e Flexbox  
-
----
-
-## 📂 Estrutura do Sistema
-- `index.php` → Tela inicial com login e registro de usuários.  
-- `cadastro.php` → Cadastro de novos usuários.  
-- `login.php` → Autenticação de login.  
-- `logout.php` → Finaliza a sessão do usuário.  
-- `pages/veiculos/` → Tela de gerenciamento de veículos (listagem, cadastro e edição).  
-- `pages/termos/` → Página de termos de uso.  
-- `pages/esqueceu_senha/` → Recuperação de senha.  
-
----
-
-## 🔄 Fluxo do Sistema (Modelo C4)
-
-### 🌐 Contexto (Nível 1)
-```mermaid
-flowchart LR
-    User[Usuário / Aluno] -->|Login / Registro| System[Sistema de Gestão de Veículos]
-    System -->|Exibe tela de veículos| VehicleDB[Banco de Dados de Veículos]
-    System -->|Autentica usuários| UserDB[Banco de Dados de Usuários]
+## 😄 Seja um dos contribuidores
+- Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
