@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  min-height: 100vh;
+  padding: 40px 20px;
+  
+  /* Centraliza vertical e horizontal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terms-container {
+  background-color: #fff;
+  padding: 40px 50px;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  
+  /* Para um scroll interno caso o texto seja muito longo */
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+/* Personalização do scrollbar para UX */
+.terms-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terms-container::-webkit-scrollbar-thumb {
+  background-color: #7494ec;
+  border-radius: 4px;
+}
+
+/* Título principal */
+.terms-container h1 {
+  font-size: 34px;
+  color: #333;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #7494ec;
+  padding-bottom: 12px;
+  font-weight: 700;
+}
+
+/* Subtítulos */
+.terms-container h2 {
+  font-size: 26px;
+  color: #444;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Parágrafos */
+.terms-container p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  text-align: justify;
+  letter-spacing: 0.02em;
+}
+
+/* Listas */
+.terms-container ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.terms-container li {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Links */
+.terms-container a {
+  color: #7494ec; 
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.terms-container a:hover {
+  color: #5577cc;
+  text-decoration: underline;
+}
+
+/* Ícone do link */
+.terms-container a i {
+  font-size: 18px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 30px 25px;
+    max-height: 90vh;
+  }
+
+  .terms-container h1 {
+    font-size: 28px;
+  }
+
+  .terms-container h2 {
+    font-size: 22px;
+  }
+
+  .terms-container p,
+  .terms-container li {
+    font-size: 15px;
+  }
+}
