@@ -8,7 +8,7 @@
 > Sistema automatizado de controle de entrada e saída de veículos baseado em Visão Computacional e Reconhecimento Óptico de Caracteres (OCR).
 O projeto tem como objetivo otimizar o fluxo de veículos em estacionamentos e ambientes institucionais, garantindo rapidez, segurança e eficiência operacional.
 
-### Funcionalidades e Melhorias
+### 🔄 Funcionalidades e Melhorias
 
 O projeto foi finalizado com as seguintes funcionalidades:
 
