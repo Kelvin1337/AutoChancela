@@ -10,10 +10,9 @@ O projeto tem como objetivo otimizar o fluxo de veículos em estacionamentos e a
 
 
 
-### 🔄 Funcionalidades e Melhorias
+## 🔄 Funcionalidades e Melhorias
 
 O projeto foi finalizado com as seguintes funcionalidades:
-
 - [x] Captura de imagem em tempo real via webcam (OpenCV);
 - [x] Leitura automática da placa do veículo com Tesseract OCR;
 - [x] Integração com banco de dados institucional em PHP/MySQL;
