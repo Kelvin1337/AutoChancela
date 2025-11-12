@@ -1,10 +1,10 @@
 # 🚗 Sistema de Login e Cadastro de Veículos
 
-![GitHub repo size](https://img.shields.io/github/repo-size/SEU_USUARIO/SEU_REPOSITORIO)
-![GitHub language count](https://img.shields.io/github/languages/count/SEU_USUARIO/SEU_REPOSITORIO)
-![GitHub top language](https://img.shields.io/github/languages/top/SEU_USUARIO/SEU_REPOSITORIO)
-![GitHub issues](https://img.shields.io/github/issues/SEU_USUARIO/SEU_REPOSITORIO)
-![GitHub license](https://img.shields.io/github/license/SEU_USUARIO/SEU_REPOSITORIO)
+![GitHub repo size](https://img.shields.io/github/repo-size/Kelvin1337/AutoChancela)
+![GitHub language count](https://img.shields.io/github/languages/count/Kelvin1337/AutoChancela)
+![GitHub top language](https://img.shields.io/github/languages/top/Kelvin1337/AutoChancela)
+![GitHub issues](https://img.shields.io/github/issues/Kelvin1337/AutoChancela)
+![GitHub license](https://img.shields.io/github/license/Kelvin1337/AutoChancela)
 
 ---
 
